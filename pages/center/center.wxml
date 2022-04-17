@@ -1,0 +1,21 @@
+<!-- 页面：爱车 -->
+<navigator url="/pages/Bind/Bind?id={{openid}}" open-type="navigate">
+    <view class='item'>
+   车辆绑定
+
+    </view>
+  </navigator>
+
+  <navigator url="/pages/Documents/Documents?id={{openid}}" open-type="navigate">
+    <view class='item'>
+    车辆证件
+     
+    </view>
+  </navigator>
+
+  <navigator url="/pages/Accident/Accident?id={{openid}}" open-type="navigate">
+    <view class="item">
+     车辆事故
+    
+    </view>
+  </navigator>

@@ -1,0 +1,21 @@
+/* pages/center/center.wxss */.item {
+    height: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    text-align: center;
+    justify-content: center;
+        flex-direction: column;
+}
+
+navigator{
+    height: 100px;
+}
+navigator:nth-child(1){
+background-color: aqua;
+}
+navigator:nth-child(2){
+    background-color: rgb(243, 191, 182);
+}
+navigator:nth-child(3){
+    background-color: rgb(238, 146, 230);
+}

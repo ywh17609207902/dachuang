@@ -1,0 +1,74 @@
+<!--pages/plugin/route-plan.wxml-->
+<view class="map-view-container">
+  <view class="map-view-content">
+	</view>
+	<view class="feature-container">
+		<view class="feature-content border-bottom border-top">
+			<text class="feature-label">起点位置</text>
+			<view class="feature-txt" bindtap="onChooseStartPoint">
+				<text wx:if="{{!startPoint}}" class="point">获取选点</text>
+				<text class="point active" wx:else>{{startPoint.name}}</text>
+				<image class="right-arrow" src="{{imgs.rightArrow}}"></image>
+			</view>
+		</view>
+		<view class="feature-content border-bottom">
+			<text class="feature-label">终点位置</text>
+			<view class="feature-txt" bindtap="onChooseEndPoint">
+				<text wx:if="{{!endPoint}}" class="point">获取选点</text>
+				<text class="active point" wx:else>{{endPoint.name}}</text>
+				<image class="right-arrow" src="{{imgs.rightArrow}}"></image>
+			</view>
+		</view>
+		<view class="feature-content border-bottom">
+			<text class="feature-label">出行方式</text>
+			<view class="feature-txt">
+				<view
+					bindtap="onSelectMode"
+					class="{{modeIndex === index ? 'active feature-txt-item' : 'feature-txt-item'}}"
+					data-index="{{index}}"
+					wx:for="{{modes}}">
+					{{item.text}}
+				</view>
+			</view>
+		</view>
+		<view class="feature-content border-bottom">
+			<text class="feature-label">显示导航</text>
+			<switch
+				class="feature-switch"
+				color="#3875FF"
+				checked="{{isNavigate}}"
+				bindchange="onChangeNavigate">
+			</switch>
+		</view>
+		<view class="feature-content" bindtap="onTriggerActionsheet">
+			<text class="feature-label">个性地图</text>
+			<view class="feature-txt">
+				<image wx:if="{{customStyles[keyIndex].icon}}" class="custom-icon" src="{{customStyles[keyIndex].icon}}"></image>{{customStyles[keyIndex].text}}<image class="right-arrow" src="{{imgs.rightArrow}}"></image>
+			</view>
+		</view>
+		<view class="feature-content" bindtap="ontriggerSelectThemeColor">
+			<text class="feature-label">主题色</text>
+			<view class="feature-txt">
+				<view class="bg-icon" style="{{'background-color:' + (themeColor)}}"></view>
+				<image class="right-arrow" src="{{imgs.rightArrow}}"></image>
+			</view>
+		</view>
+	</view>
+  <view class="primary-btn mt30" bindtap="onWatchDemo">
+    开始导航
+	</view>
+
+	<mp-actionsheet
+		bindactiontap="onSelectCustom"
+		ext-class="custom-actionsheet"
+		show="{{showCustomActionsheet}}"
+		actions="{{customStyles}}">
+	</mp-actionsheet>
+
+	<mp-actionsheet
+		bindactiontap="onSelectThemeColor"
+		ext-class="theme-actionsheet"
+		show="{{showThemeColorActionsheet}}"
+		actions="{{themeColors}}">
+	</mp-actionsheet>
+</view>

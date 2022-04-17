@@ -1,0 +1,11 @@
+/* pages/Contact/Contact.wxss */
+.contactsWarn view{
+    text-align: center;
+    line-height: 100rpx;
+}
+.contactsWarn image{
+    width: 350rpx;
+    height: 350rpx;
+    margin: 200rpx ;
+}
+

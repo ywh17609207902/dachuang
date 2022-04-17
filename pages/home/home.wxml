@@ -1,0 +1,45 @@
+<!-- 页面：我的 -->
+<view>
+  <view class="userinfo">
+    <open-data class="touxiang" type="userAvatarUrl"></open-data>
+    <open-data class="nicheng" type="userNickName"></open-data>
+  </view>
+  <view class="hr"></view>
+
+  <navigator url="/pages/Contact/Contact?id={{openid}}" open-type="navigate">
+    <view class='item'>
+      <view class="title">紧急联系人管理</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url="/pages/address/address?id={{openid}}" open-type="navigate">
+    <view class='item'>
+      <view class="title">家庭地址管理</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url="/pages/information/information?id={{openid}}" open-type="navigate">
+    <view class="item">
+      <view class="title">家庭人员信息</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url="/pages/set/set" open-type="navigate">
+    <view class="item">
+      <view class="title">设置</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>
+</view>
+

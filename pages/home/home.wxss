@@ -1,0 +1,87 @@
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1eded;
+    width: 100%;
+    height: 300rpx;
+}
+
+.touxiang {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  display: flex;
+  overflow:hidden;
+  text-align: center;
+
+}
+
+.nicheng {
+    color: black;
+}
+
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
+
+.hr {
+    width: 100%;
+    height: 15px;
+    background-color: #f4f5f6;
+}
+/* 用户中心 */
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.detail2 {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    height: 50px;
+    line-height: 50px;
+    color: #888;
+}
+navigator{
+    border-top: 2px solid #ccc;
+}
+navigator:last-child{
+    border-bottom: 2px solid #ccc;
+}

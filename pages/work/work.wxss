@@ -1,0 +1,100 @@
+
+.puTile {
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  align-items: center;
+}
+
+.puTile .txt {
+  font-size: 40rpx;
+  height: 100%;
+  position: relative;
+  padding-left: 15rpx;
+}
+
+.puTile .txt::before {
+  display: block;
+  width: 10rpx;
+  height: 34rpx;
+  background: #c8020b;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -20rpx;
+}
+.puTile .more{
+  font-size: 32rpx;
+  color: #666;
+}
+.header {
+  width: 750rpx;
+  height: 90rpx;
+}
+
+.hdCon {
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.hdCon navigator,
+.hdCon kefu {
+  height: 50rpx;
+}
+
+.hdCon image {
+  height: 50rpx;
+}
+
+.kefu {
+  position: relative;
+}
+
+.kefu .button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 364rpx;
+}
+
+.banner swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.banner image {
+  width: 100%;
+  height: 364rpx;
+}
+/* 发送短信 */
+.inp{
+  border: 2rpx solid #000
+}
+/* 按钮 */
+.Navigation{
+  display: block;
+  widows: 100%;
+  height: 100rpx;
+  background-color: #08ac08;
+  border-radius:5px;
+  border-bottom: 2px solid rgb(218, 215, 215) ;
+}
+.Navigation_mh{
+  display: block;
+  width: 100% ;
+  height: 100%;
+  font-size:19px ;
+line-height: 100rpx;
+text-align: center;
+color: rgb(255, 255, 255);
+}

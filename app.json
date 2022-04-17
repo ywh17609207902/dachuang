@@ -1,0 +1,65 @@
+{
+  "cloud": true,
+  "pages":[
+    "pages/work/work",
+    "pages/center/center",
+    "pages/home/home",
+    "pages/hospital/hospital",
+    "pages/help/help",
+    "pages/address/address",
+    "pages/information/information",
+    "pages/set/set",
+    "pages/Accident/Accident",
+    "pages/Documents/Documents",
+    "pages/Bind/Bind",
+    "pages/Contact/Contact",
+    "pages/addContacts/addContacts"
+
+  ], 
+  "window": {
+    "navigationBarBackgroundColor": "#CCCCFF",
+    "navigationBarTitleText": "生命规划线",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark"
+  },
+  "tabBar": {
+      "list": [
+      {
+        "pagePath": "pages/work/work",
+        "text": "首页",
+        "iconPath": "images/a.png",
+        "selectedIconPath": "images/aa.png" 
+      }, 
+      {
+        "pagePath": "pages/center/center",
+        "text": "爱车",
+        "iconPath": "images/c.png",
+        "selectedIconPath": "images/cc.png"
+      }, 
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "images/d.png",
+        "selectedIconPath": "images/dd.png"
+      }
+    ]
+    },
+    "sitemapLocation":"sitemap.json",
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序定位"
+      }
+    },
+  "plugins": {
+  "routePlan": {
+    "version": "1.0.19",
+    "provider": "wx50b5593e81dd937a"
+  },
+  "chooseLocation": {
+    "version": "1.0.9",
+    "provider": "wx76a9a06e5b4e693e"
+}
+
+}
+}

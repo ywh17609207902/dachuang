@@ -1,0 +1,20 @@
+<view class="contactsWarn" wx:if="{{contactsInfo == ''}}">
+<image src="../../images/contactImg/attention.png"></image>
+<view>暂时没有联系人</view>
+</view>
+<view wx:else>
+    <view class="showContacts" wx:for="{{contactsInfo}}">
+        <view class="contactsName">
+            <text>联系人：{{item.contactsName}}</text>
+        </view>
+        <view class="contactsNumber">
+            <text>电话：{{item.contactsNumber}}</text>
+        </view>
+        <view class="contactsRelation">
+            <text>电话：{{item.contactsRelation}}</text>
+        </view>
+    </view>
+</view>
+<view class="containerAdd">
+    <button class="addBtn" catchtap="addContactsInfo" type="primary">添加</button>
+</view>

@@ -1,0 +1,36 @@
+<!-- 页面：我的→设置 -->
+<navigator url="/pages/Privacy/Privacy?id={{openid}}" open-type="navigate">
+    <view class='item'>
+      <view class="title">隐私设置</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>  
+  <navigator url="/pages/Security/Security?id={{openid}}" open-type="navigate">
+    <view class='item'>
+      <view class="title">账号安全</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>  
+  <navigator url="/pages/Feedback/Feedback?id={{openid}}" open-type="navigate">
+    <view class='item'>
+      <view class="title">帮助反馈</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>  
+  <navigator url="/pages/About/About?id={{openid}}" open-type="navigate">
+    <view class='item'>
+      <view class="title">关于我们</view>
+      <view class="detail2">
+        <text> ></text>
+      </view>
+    </view>
+  </navigator>  
+  <navigator class="online" url="/pages/Online/Online?id={{openid}}" open-type="navigate">
+      登录/退出
+  </navigator>

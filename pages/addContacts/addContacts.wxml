@@ -1,0 +1,20 @@
+<!-- 添加联系人页面 -->
+<view class="contactsInp">
+    <image src="../../images/contactImg/add-user.png"></image>
+    <view>姓名：</view>
+    <input type="text" placeholder="请输入联系人姓名" bindinput="handleInput" data-type="contactsName" />
+</view>
+<view class="contactsInp">
+    <image src="../../images/contactImg/phone.png"></image>
+    <view>电话：</view>
+    <input type="text" placeholder="请输入联系人电话" bindinput="handleInput" data-type="contactsNumber" />
+</view>
+<view class="picker">
+    <!-- <view>选择关系：</view> -->
+    <image src="../../images/contactImg/relation.png"></image>
+    <picker class="pickerSec" mode="selector" range="{{contactsRelation}}" value="{{index}}" bindchange="relationChange">
+       选择关系：{{contactsRelation[index]}}
+    </picker>
+    
+</view>
+<button type="primary" bindtap="addContactsInfo">添加</button>

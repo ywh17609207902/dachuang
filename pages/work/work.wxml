@@ -1,0 +1,60 @@
+<!-- 页面：首页 -->
+<view class="header">
+  <view class="hdCon">
+    <navigator
+      open-type="switchTab"
+      url="/pages/work/work"
+      class="logo"
+    >
+      <image mode="heightFix" src="/images/logo.png"/>
+
+    </navigator>
+  <view class="kefu">
+      <button class="button" open-type="contact"></button>
+      <image mode="heightFix"  src="/images/xiaoxi.png" />
+
+    </view>
+
+  </view>
+
+</view>
+
+<view class="banner">
+
+  <swiper
+    indicator-dots
+    indicator-color="rgba(255,255,255,0.5)"
+    indicator-active-color="#fff"
+    circular
+    autoplay
+  >
+    <swiper-item>
+      <image src="https://tse1-mm.cn.bing.net/th/id/R-C.d9137c3b2c270cb4fe15ec9811f8781e?rik=CRRYNlWG9HWe6g&riu=http%3a%2f%2fpic.5tu.cn%2fuploads%2fallimg%2f2104%2fpic_5tu_big_6142732_065cf8d1e327b1b7f84e3e8b7ab51c20.jpg&ehk=awNck5HLcEiByjHJnQeqsKL55GsDXR5SWaTHgHcRtHA%3d&risl=&pid=ImgRaw&r=0" />
+
+    </swiper-item>
+    <swiper-item>
+      <image src="https://img-qn-2.51miz.com/preview/muban/00/00/52/25/M-522513-92EE1832.jpg" />
+
+    </swiper-item>
+    <swiper-item>
+      <image src="https://img-u-2.51miz.com/preview/muban/00/00/52/29/M-522956-ED311A51.jpg" />
+
+    </swiper-item>
+
+  </swiper>
+
+</view>
+
+<view class="Navigation">
+  <navigator  url="/pages/route-plan/route-plan" class="Navigation_mh" >导航</navigator>
+</view>
+
+
+<view class="Navigation">
+  <navigator  url="/pages/hospital/hospital" class="Navigation_mh" >导航最近医院</navigator>
+</view>
+
+<button type="primary"
+bindtap="calling">一键呼救</button>
+
+

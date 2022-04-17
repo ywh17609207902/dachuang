@@ -1,0 +1,49 @@
+/* pages/addContacts/addContacts.wxss */
+.contactsInp{
+    display: flex;
+    border:1px black solid;
+    border-radius: 10px;
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+input{
+    height: 100rpx;
+    width: 480rpx;
+    padding: 0 25rpx 0 25rpx;
+}
+
+.contactsInp view{
+    width: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    margin-left: 10rpx;
+}
+.contactsInp image ,.picker image{
+    width: 100rpx;
+    height: 80rpx;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+.picker{
+    display: flex;
+    border:1px black solid;
+    border-radius: 10px;
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+
+.pickerSec{
+    display: flex;
+    margin-left: 10rpx;
+    line-height: 100rpx;
+}
+button{
+    position: fixed;
+    top: 90%;
+    width: 750rpx;
+    height: 100rpx;
+    box-shadow: 0px -3px 10px gray;
+}
